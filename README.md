@@ -28,7 +28,7 @@ Fã site Fortnite é uma pagina para fãs de fortnite onde o usuário pode acomp
 
 ## :information_source: Como usar
 
-Para clonar e executar este aplicativo, você precisará [Git] (https://git-scm.com), [Node.js] [nodejs] + [Yarn] [yarn] instalado no seu computador.
+Para clonar e executar este aplicativo, você precisará [Git] (https://git-scm.com) instalado no seu computador.
 
 Na sua linha de comando:
 
