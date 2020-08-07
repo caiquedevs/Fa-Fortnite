@@ -36,7 +36,7 @@ Na sua linha de comando:
 
 ```bash
 # Clonar este repositório
-$ git clone https://github.com/caiquedevs/LoveCalculator.git
+$ git clone https://github.com/caiquedevs/Fa-Fortnite.git
 
 # Entre no repositório
 # Execute o arquivo Index.html
