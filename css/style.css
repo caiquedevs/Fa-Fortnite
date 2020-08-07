@@ -1,0 +1,411 @@
+@charset "utf-8";
+@font-face { font-family: fortnite; src: url('../fonts/LuckiestGuy-Regular.ttf'); }
+@font-face { font-family: poppins; src: url('../fonts/Poppins-Regular.ttf'); }
+
+/* largura do scroll vertical e horizonal*/
+::-webkit-scrollbar { width:5px; height:5px; }
+     
+/* Fundo do scroll*/
+::-webkit-scrollbar-track { background: rgb(46, 46, 46); }
+ 
+/* Cor do scroll*/
+::-webkit-scrollbar-thumb { background: #7159C1; }
+
+/*Reset Config's*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+    font-family: poppins, sans-serif ;
+}
+
+
+body{ background-color: #ebeded; }
+a{ text-decoration: none; color: #f8f9fa; }
+img{ width: 100%; max-width: 100%; height: 100%; }
+small{ color: #858585; }
+p{ color: #858585; margin: 7px 0; }
+li{ cursor: pointer; }
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+.row{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+/*-----------------------------------------------------------------------*/
+/*-------------------------CABEÇALHO CONFIG'S----------------------------*/
+/*-----------------------------------------------------------------------*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+header .container{
+    width: 100%;
+    max-width: 1340px;
+}
+header .social-navbar ul{
+    width: max-content; 
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+}
+header .social-navbar ul li{
+    padding: 7px;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.social-icon{
+    width: 100%;
+    max-width: 20px;
+}
+figure#logo{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -40px;
+    cursor: pointer;
+    z-index: 1;
+}
+.hamburguer{
+    cursor: pointer;
+    z-index: 9999;
+}
+.hamburguer .fatia{
+    background-color: white;
+    height: 4px;
+    width: 28px;
+    display: block;
+    margin: 4px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+.menu{
+    width: 0px;
+    height: 100vh;
+    background-color: #2a2a2a;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+
+
+/*-----------------------------------------------------------------------*/
+/*---------------------------TOPICS CONFIG'S-----------------------------*/
+/*-----------------------------------------------------------------------*/
+article#topics{
+    width: 100%;
+    height: auto;
+    padding: 35px 0;
+    background: url('../assets/bk.jpg')no-repeat right bottom fixed;
+    background-size: cover;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+}
+.topic{
+    width: auto;
+    max-width: 23%;
+    height: min-content;
+    border-radius: 15px;
+    box-shadow: -5px 0px 6px rgba(0, 0, 0, 0.5);
+}
+.topic figure{
+    width: auto;
+    height: auto;
+}
+.topic figure img{
+    width: 100%;
+    max-width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.topic figure figcaption {  
+    width: 100%;
+    max-width: 100%;
+    height: 70px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.8;
+    border-top-left-radius: 15px;
+    bottom: 0px;
+}
+.topic figure figcaption span{
+    font-family: fortnite, Lato, Roboto, Calibri, Arial;
+    font-size: 21px;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+.topic figure:hover figcaption span{
+    transform: scale(1.1);
+}
+
+
+
+/*-----------------------------------------------------------------------*/
+/*--------------------------BIGCARD CONFIG'S-----------------------------*/
+/*-----------------------------------------------------------------------*/
+#bigcard{
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+#bigcard .left-info{
+    width: 100%;
+    max-width: 50%;
+    min-width: 50%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#bigcard .left-info figure img{
+    min-height: 100%;
+    border-top-left-radius: 5px;
+}
+#bigcard .left-info figcaption{
+    padding: 15px;
+    position: absolute;
+    bottom: 0px;
+}
+#bigcard .left-info figcaption small{
+    font-family: fortnite, Lato, Roboto, Calibri, Arial;
+    font-size: 80%;
+    color: #ffffff;
+}
+#bigcard .left-info figcaption span{
+    font-family: fortnite, Lato, Roboto, Calibri, Arial;
+    font-size: 2rem;
+    color: #ffffff;
+}
+.category-card{
+    width: 100%;
+    height: 52px;
+    padding: 0 20px;
+    margin-top: -7px;
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    color: #ffffff;
+    background-color: rgb(42, 42, 42);
+    border-bottom-left-radius: 5px;
+}
+#bigcard .right-info{
+    width: 100%;
+    max-width: 50%;
+    padding: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#bigcard .right-info h1{
+    font-family: fortnite, Lato, Roboto, Calibri, Arial;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #363636;
+}
+#bigcard .right-info button{
+    width: 90px;
+    height: 38px;
+    font-size: 0.9rem;
+    margin: 7px 0;
+    border-radius: 5px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+
+
+/*-----------------------------------------------------------------------*/
+/*-------------------------SMALLCARD CONFIG'S----------------------------*/
+/*-----------------------------------------------------------------------*/
+.smallcard{
+    width: 32%;
+    height: 440px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.smallcard .bodycard{
+    padding: 25px;
+}
+.smallcard .bodycard h1{
+    font-family: fortnite, Lato, Roboto, Calibri, Arial;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #363636;
+    margin: 15px 0;
+}
+
+
+
+/*-----------------------------------------------------------------------*/
+/*---------------------------FOOTER CONFIG'S-----------------------------*/
+/*-----------------------------------------------------------------------*/
+footer{
+    background-color: #000;
+    color: #fff;
+    border-top: 9px solid #2a2a2a;
+    margin-top: 100px;
+    padding-bottom: 25px;
+}
+footer::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+footer nav{
+    margin: 30px 0;
+}
+footer nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: max-content;
+    text-align: center;
+}
+footer nav ul li{
+    padding: 7px;
+    margin-right: 7px;
+    list-style-type: none;
+    color: #f8f9fa;
+
+}
+footer #download{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer #download li{
+    list-style: none;
+    width: 160px;
+    margin: 0 7px;
+}
+footer .linha{
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+footer p{
+    margin: 15px 0;
+}
+
+
+
+/*-----------------------------------------------------------------------*/
+/*---------------------------MEDIAS SCREENS------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+
+@media screen and (min-width: 992px){}
+
+/* 768px AND 991px */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    
+    /* SMALLCARD CONFIG */
+    .smallcard{ width: 49%; height: auto; margin: 15px 0}
+    
+    /* BIGCARD CONFIG's */
+    #bigcard .left-info figcaption span{ font-size: 1.5rem; }
+
+    /* TOPIC CONFIG */
+    article#topics{ display: none;}
+
+    /* FOOTER CONFIG's */
+    footer{ margin-top: 50px; }
+    footer .row{ justify-content: center;}
+    footer nav{ margin: 20px 0; }
+    footer #download{ margin-bottom: 20px; }
+}
+
+/*576px AND 767px*/
+@media screen and (min-width: 576px) and (max-width: 767px){
+    /* BIGCARD CONFIG's */
+    #bigcard .left-info{ max-width: 100%; }
+    #bigcard .right-info{ max-width: 100%; }
+    #bigcard .left-info figcaption span{ font-size: 1.5rem; }
+    
+    /* SMALLCARD CONFIG */
+    .smallcard{ width: 100%; height: auto; margin: 15px 0}
+
+    /* TOPIC CONFIG */
+    article#topics{ display: none;}
+
+    /* FOOTER CONFIG's */
+    footer{ margin-top: 50px; }
+    footer .row{ justify-content: center;}
+    footer nav{ margin: 20px 0; }
+    footer #download{ margin-bottom: 20px; }
+}
+
+/* 0px AND 575px */
+@media screen and (min-width: 0px) and (max-width: 575px){
+
+    /* NAVBAR CONFIG */
+    .navbar{ justify-content: flex-end ; }
+    .social-navbar{ display: none; }
+
+    /* TOPICS CONFIG */
+    #topics{ display: none;}
+
+    /* BIGCARD CONFIG */
+    #bigcard{ margin: 30px 0 10px 0; }
+    #bigcard .left-info{ max-width: 100%; }
+    #bigcard .left-info figcaption small{ display: none; }
+    #bigcard .left-info figcaption span{ font-size: 1.5rem; }
+    #bigcard .right-info{ max-width: 100%; }
+
+    /* SMALLCARD CONFIG */
+    .smallcard{ width: 100%; height: auto; margin: 10px 0}
+    .smallcard{ display: flex; flex-wrap: wrap; }
+    .smallcard .thumbcard{ width: 50%; }
+    .smallcard .category-card{ display: none }
+    .smallcard .bodycard { width: 50%; }
+    .smallcard .bodycard small{ position: absolute; bottom: 13px; }
+    .smallcard .bodycard h1 { margin: 0; }
+    .smallcard .bodycard p{ display: none; }
+
+    /* FOOTER CONFIG */
+    footer{ margin-top: 50px; }
+    footer .row{ justify-content: center;}
+    footer nav{ margin: 20px 0; }
+    footer #download{ margin-bottom: 20px; }
+}
